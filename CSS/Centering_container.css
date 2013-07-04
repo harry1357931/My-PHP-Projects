@@ -1,0 +1,52 @@
+                                              /*     Centering Container        */
+
+/*
+
+  1)   <body>
+         <div id="container">
+		     Content
+	     </div>
+       </body>
+	   
+	   Now:-  //margin: 0 auto 0 auto; ---- automatically keep container at the center...
+	   #container{
+		 width: 550px;
+		 background: #000;
+		 color: #fff;
+		 // auto : from left and right....it will manage itself...
+		 margin: 0 auto 0 auto;                        //margin-top:    margin-left:    margin-bottom:     margin-right:      margin: all four here 
+      
+	    }
+
+        // we can also say: margin: 20px auto;     this means 20 px on the top , and 20 on the bottom, and auto on the left, and auto on the right
+		
+   2) <body>
+        <div id="container">
+		   <div id="inner">
+		     Content
+		   </div>	 
+	    </div>
+     </body>
+     Now:-
+      
+      #container{
+     width: 550px;
+	 background: #000;
+	 color: #fff;
+	 padding: 10px;
+	 /auto : from left and right....it will manage itself.../
+	 margin: 20px auto;                        /margin-top:    margin-left:    margin-bottom:     margin-right:      margin: all four here/ 
+      
+     }
+
+		#inner{
+		   width: 200px;
+		   background: #fff;
+		   color: #000;
+		   margin: 0 auto;
+        }	  
+
+
+
+
+*/

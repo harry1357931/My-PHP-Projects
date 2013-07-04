@@ -1,0 +1,43 @@
+body{
+
+   font : 0.8em  Verdana;
+}
+
+.autosuggest, .dropdown, .result {
+ margin: 0 ;
+ padding: 0 ;
+ border: 0 ;
+ width: 600;
+
+}
+
+.autosuggest
+{
+        padding: 4px;
+        border: 1px solid #000;
+        height:30;
+        /*position:fixed; */
+        top:350px;
+        right:370px;
+
+}
+
+
+.result li {
+  padding: 5px;
+  border: 1px solid #000;
+  border-top: 0;
+  /* border-bottom: 0; */
+  cursor: pointer;
+
+
+}
+
+.result li:hover {
+  /*background: #000; 
+    color: #fff ;   */
+  background-color: #FFCCFF;
+  color: #B00000 ;
+
+}
+

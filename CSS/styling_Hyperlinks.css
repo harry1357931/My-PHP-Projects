@@ -1,0 +1,25 @@
+
+/* Styling Hyper Links -- active, visited and hover 
+
+USE :- if u want to use all of them...or atleast two of them....
+       then order should be:-
+	   link --> visited ---> hover ---> active
+
+*/
+
+a:link, a:visited{
+ 
+ color: #000;
+
+}
+
+a:hover{
+  font-weight: bold;
+  letter-spacing: 1em;
+}
+
+a:active{             /*  Active is until u hold ur click....or u keep pressing the click button...don't leave it... */
+
+ color: blue;
+}
+

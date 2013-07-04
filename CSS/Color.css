@@ -1,0 +1,60 @@
+                                    /*  A brief look at colors and how we can specify color in CSS.  */
+									
+/*
+   Colors -- We can color border, text, background....
+
+  1) 
+
+  #container{
+  
+	 color: #fff;      // To color Text:-  hexadecimal no.'s based colors   
+     color: rgb(0,0,0);    // Other Way for color---this is BLACK color, 255, 255, 255 for white color....
+     	 
+	 color: rgba(0,0,0,0.5);        // rgb."a"  ...here "a" defines the Opacity....in this case it is half visible...
+	 // this will apply it to all container text or all other stuff...for particular see down.... 
+   
+     background: blue;   // text based colors... 
+   }
+   
+   
+   /////
+   <body>
+        <div id="container">
+		   
+		   <span>  Content </span>
+		   
+		</div>	 
+	    
+   </body>
+    
+   Now the following CSS file will apply opacity stuff to only text inside the span element....	
+   
+   #container{
+      background: #fff;   
+   
+   }
+   
+   #container span{
+   
+     color: rgba(0,0,0,0.5);  only fade text in the container....only applies on text...
+	    or
+     opacity: 0.5;		// will fade everything in the container....
+   
+   }
+   
+   
+	
+
+
+   
+
+
+
+
+
+
+
+
+
+*/
+									

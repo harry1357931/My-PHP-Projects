@@ -1,0 +1,177 @@
+////////////////////////////////////
+
+                                                ////       Selectors in CSS             /////
+
+<!DOCTYPE html>
+<html>
+   <head>
+		<link  rel="stylesheet"  href="css/primary.css" >
+   </head>
+   <body>
+        <div id="container">
+		    <a href="#" class="special">Link1</a>
+		    <a href="#" class="special">Link2</a>
+		 
+		</div>
+   </body>
+</html> 
+
+------
+
+
+ /*
+     . is used for classes,  # for id's   , a { ...} for selecting <a href="">...</a> ....
+	 here without . and # means directly selecting that element...
+ 
+ 
+ */
+ 
+ /* Extremely Important---Selecting id's, classes, and elements and their grouping
+     1) for selecting all "p" and "a" elements....the key thing seperated by comma, comma can also be used in id's, and classes, 
+	    and the other keything is GROUPING.....grouping of multiple elements... 
+     2) Prevents duplication of code and Saves Space
+	 
+ */ 
+ 
+ div, p, a , .red, #container {                   
+     color: #fff;
+ }
+
+ a {                   /* for selecting all "a" elements */ 
+     color: #fff;
+ }
+  
+#container a {                   /* for selecting all "a" elements in container */ 
+     color: #fff;
+  }
+
+#container{                /* # for id and id is unique, id stands for i-dentifier, here container is an id*/
+   background: #eee;
+}
+
+/*    
+ .special {                                // no space b/w . and class name....
+   color: #fff;
+   } 
+ */
+ 
+ //////////////////////////
+ 
+ /*Extremely important -- Descendant and Child Selector...
+      1) Here h1 descends class article .....because here h1 is a descendant or inside class article...
+	  2) descendant is still quite generic
+	  3) Child is more pointed than descendant
+	  4) Child is the immediate occuring...like 1st header tag is child of class "article"...but not the second one....
+	  <div class="article">
+	      <h1>Header<h1>      
+		  <a href="#">Read more</a>  <-- this "a" tag is a child of article tag....
+		  <p>
+		      This paragraph is about sing is king film
+		      <a href="#">Read more</a>...       <-- this "a" tag is a child of <p> tag and not the article tag....
+		  </p>
+	  </div>
+ 
+ */
+ 
+ .article a {       /* Descendant selector (.article a):- "a" is inside some class article    and it applies to all "a" tags within article..*/
+ 
+   color: #fff;
+ }
+ 
+ .article > a {       /* Child Selector (.article >): -- applies only to child and not to grand child--- Video #3 near 9 minutes...*/
+ 
+   color: #fff;
+ }
+ 
+  ////////////////////////
+  
+  /* Extremely important: -- p.article == "p" with a class of "article    (Another way of Selecting)"
+          // p. article :- only applies to p elements with class "article" and leave out any other element with class "article"...
+		  // in  this it is <div> 
+     <body>
+           <div class="article">
+		      Singh
+		   </div>	
+           <p class="article">
+		      King...
+		   </p>		   
+	 
+	 </body>
+  
+  */
+  
+  p.article {                /* p.article == "p" with a class of "article" ....and there is no space b/w p, ".", and article....  */
+  
+    color: #fff;
+  }
+  
+  //////////////
+  /*  Extremely Important -- Selecting elements by attributes
+      
+	  1) Suppose there are four anchor tags <a href="1">, <a href="2">, <a href="3">, <a href="4"> with different value of 
+	     attribute "href" , now we can select anchor tag having some particular value....
+		 
+	   <body>
+	       <a href="http://google.com">Google</a>
+		   <a href="http://localhost">Local Host</a>
+		   <a href="http://gmail.com">Gmail</a>
+		   <a href="http://facebook.com">Facebook</a>
+       </body>
+	   
+	    Now we can select a particular anchor tag like....<a href="http://google.com">Google</a>
+	       by:- 
+           a[href="http://google.com"]  {              <= this is called selecting by attributes...
+		      color: #fff;
+		   }		   
+		   
+ 
+	2) Another example
+	     <body>
+		     <img src="" alt="Harry Singh">
+             <img src="" alt="Sherry Singh"> 			   
+		 </body>
+           Now we can select image with alt="harry singh" by:-
+           
+           img[alt~="harry"] {           // ~=  contains :-- for this case any "alt" attribute which contains harry (space seperated)...we can also use "="  
+		                                 // but then we have to use full value inside [alt="harry singh"] ....
+		     border: 1px solid #fff;
+			 
+		   }		   
+
+  */
+  
+  /////////////////////
+  
+/*  Extremely Important -- Selecting elements or tags by their "pseudoclasses"(in anchor tag: --like "hover", "visited", etc...) ....
+               or inbuilt classes....not sure
+      
+	  1) .........this will work during events like hover...or visited...
+	   <body>
+	       <a href="http://google.com">Google</a>
+		   <p>Hover over me to increase my size</p>
+		   <input type="text">
+	   </body>
+	   
+	    Now ....
+           a:hover {              <= This will work when we will hover over text "Google" in browser
+		      text-decoration: none;   // this will also remove the default settings...video no. 5...
+		   }	
+           
+		   a:visited {
+			   color: green;
+		   }
+           
+           p:hover {
+		     font-size: 120%;
+		   } 		   
+		   input[type="text"]:focus{
+		     background: #aaa;
+		   }
+		   
+  */
+  
+  /////////////////////
+  
+  
+ 
+ 

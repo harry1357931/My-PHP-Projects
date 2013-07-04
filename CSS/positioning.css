@@ -1,0 +1,146 @@
+ /* Relative, absolute and fixed positioning in CSS */
+ 
+ /*
+  1) Relative positioning == default  
+      <body>
+        <div id="container">
+		     <div id="inner">
+			     Content
+			 </div>
+	    </div>
+      </body>
+	  
+	  Now:--
+	  
+		#container{
+		  position: relative;             // relative is default positioning
+		  width: 300px;
+		  height: 300px;
+		  background: #777;
+		  
+		}
+
+
+		#inner{
+		  position: relative;        
+		  width: 100px;
+		  height: 100px;
+		  background: #999;
+		  
+		}
+
+      2:a)  Absolute positioning:-- From the boundary walls of browser and not relative...or we can say it is relative to outermost element
+	        In this case, we are not setting up the parent container....
+		  <body>
+			   <div id="container">
+				 <div id="inner">
+					 Content
+				 </div>
+			   </div>
+          </body>
+         Now: --
+		 
+			#container{
+			  margin: 30px;
+			  width: 300px;
+			  height: 300px;
+			  background: #777;
+			  
+			}
+
+
+			#inner{
+			  position: absolute;
+			  top: 10px;  
+			  width: 100px;
+			  height: 100px;
+			  background: #999;
+			  
+			}
+  2:b)  Absolute positioning:-- 
+	        In this case, we are setting up the parent container to relative....
+		  <body>
+			   <div id="container">
+				 <div id="inner">
+					 Content
+				 </div>
+			   </div>
+          </body>
+         Now: --
+		 
+			#container{
+			  position: relative;
+			  margin: 30px;
+			  width: 300px;
+			  height: 300px;
+			  background: #777;
+			  
+			}
+
+
+			#inner{
+			  position: absolute;
+			  top: 10px;  
+			  width: 100px;
+			  height: 100px;
+			  background: #999;
+			  
+			}
+			
+   3: Fixed Positioning:-- the element will remain there even after scrolling down....
+         <body>
+           <div id="container">
+		     <div id="inner">
+			     Content
+			 </div>
+	      </div>
+         </body>
+
+         Now:-     
+		 
+		  body{
+			 height: 3000px;
+
+			}
+
+
+			#container{
+			  position: fixed;       // fixed positionin ---Video no. 8 4th quarter....
+			  margin: 30px;
+			  width: 300px;
+			  height: 300px;
+			  background: #777;
+			  
+			}
+
+
+			#inner{
+			  position: absolute;
+			  top: 10px;  
+			  width: 100px;
+			  height: 100px;
+			  background: #999;
+			  
+			}
+
+      Property Values
+
+		Value	Description	Play it
+		Static	Elements renders in order, as they appear in the document flow. This is default.	
+		Play it »
+		Absolute	The element is positioned relative to its first positioned (not static) ancestor element	
+		Play it »
+		Fixed	The element is positioned relative to the browser window	
+		Play it »
+		Relative	The element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's LEFT position	
+		Play it »
+		inherit	The value of the position property is inherited from the parent element	
+		
+		
+		
+		
+		
+
+
+		 
+*/

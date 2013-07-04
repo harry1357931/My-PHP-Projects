@@ -1,0 +1,60 @@
+#container_main {
+
+     color: rgb(0,1,0);    
+     position: absolute;             
+	 width: 1200px;
+     height: 310px;	 
+	 top: 150px;
+	 /* background: #DCFEFC;
+      */	 
+}
+
+.container_sub{
+   /*    
+	 margin-right: 10px;
+     color: rgb(0,1,0);     
+     position: relative;                
+	 background: #F5E4AE; 
+	 border:solid 1px #999; 
+   */
+   
+     border:solid 1px #999;
+     float:left;
+     height:300px;
+     margin-left:5px;
+     width:165px;
+	     	 
+}
+
+.heading{              /* Car Websites Research comparator, Page Name: main..etc*/
+  
+  font-style:200;
+  color: #D7DEE1;
+
+}
+
+/*  http://woorkup.com/2009/10/07/how-to-distribute-elements-horizontally-using-css/ */
+
+
+#container_forms{     /* For Forms */
+  position:relative; 
+  top:300px;
+}
+
+body{
+  background-image:url(http://www.wissard.org/sites/default/files/main-pics/antarctic-research-camp-lg.jpg);
+  
+  margin:2%;
+  margin:2%;
+  margin:2%;
+  margin:2%;
+  
+
+  /* background-image:url(http://static.travelblog.org/Wallpaper/pix/waterfall_desktop_background-1600x1200.jpg); 
+     http://www.wissard.org/sites/default/files/main-pics/antarctic-research-camp-lg.jpg
+  background:#fff url(hello.jpg) center;  
+    style="background-image:url(wrapper.jpg);"
+  */
+}
+
+

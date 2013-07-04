@@ -1,0 +1,10 @@
+.container_main {
+
+     color: rgb(0,1,0);    
+     position: absolute;             
+	 width: 800px;
+     height: 400px;	 
+	 top: 200px;
+	 background: #DCFEFC;
+	 
+}

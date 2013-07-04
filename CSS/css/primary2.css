@@ -1,0 +1,91 @@
+
+#container_1{
+  
+	 color: rgb(0,0,0);     
+     position: absolute;             
+	 background: #39D7CF;                  /*      #E0E3EB; */
+     height: 90px;		 
+	 width: 1150px;
+	 border: 1px #4DC4BE solid;
+  	 
+ }
+ 
+
+input[class="search_area"]{                               /*  Text Search Area */
+      
+	  position: absolute;
+	  top: 30px;
+	  left: 240px;
+	  height: 25px;
+	  width: 500px;
+      	  
+   }
+   
+button#search_button1{                                        /* Search Button 1 -- Auto */
+
+	  left: 760px;
+	  
+   }
+button#search_button2{                                        /*  Search Button 2 -- Manual */
+    
+	  left: 915px;
+	  
+   } 
+
+   button#search_button1, button#search_button2{                                        /*  Search Button 1 and 2*/
+      
+	  background-color:whitesmoke ;
+      border-style:solid;
+      border-color:#32A59F;            /*     #F5F5;  */
+      width:150px;
+      height:32px;
+      position: absolute;
+	  top: 30px;
+	  
+	  
+   }
+  
+ 
+#container_2{
+  
+	 color: rgb(0,0,0);    
+     position: absolute;             
+	 width: 200px;
+     height: 530px;	 
+	 top: 100px;
+	 background: #DCFEFC;
+  	 
+}
+	
+#container_3{
+  
+	 color: rgb(0,0,0);    
+     position: absolute;             
+	 width: 600px;
+	 height: 530px;
+	 top: 100px;
+	 left: 210px;
+     	 
+	 background:#F8F8F8;
+  	 
+}
+	
+
+#container_4{
+  
+	 color: rgb(0,0,0);    
+     position: absolute;             
+	 width: 345px;
+	 top: 100px;
+	 left: 815px;
+     height: 530px;	
+     background: #FAFAFA	 
+  	 
+ }
+	
+
+
+
+	
+
+
